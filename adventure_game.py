@@ -159,5 +159,6 @@ def play_again():
 
 enemy_randomness()
 lethal_weapon()
+non_lethal_weapon()
 intro()
 field()
