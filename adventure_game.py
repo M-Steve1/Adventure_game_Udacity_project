@@ -129,5 +129,17 @@ def house():
         print_pause("(Please enter 1 or 2.)")
 
 
+def play_again():
+    play_again_response = valid_input("Would you like to play again? (y/n)",
+                                      "y", "n")
+    if "y" == play_again_response:
+        print_pause("Excellent! Restarting the game ...\n")
+        # call play_game funtion here 
+    elif "n" == play_again_response:
+        print_pause("Thanks for playing! See you next time.")
+    else:
+        print_pause("Would you like to play again? (y/n)")
+
+
 intro()
 field()
