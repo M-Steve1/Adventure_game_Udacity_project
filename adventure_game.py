@@ -2,6 +2,11 @@ import time
 import random
 
 
+def enemy_randomness():
+    villian_list = ["dragon", "pirate", "vampire", "wolf"]
+    enemy_randomness.enemy = random.choice(villian_list)
+
+
 def print_pause(message_to_print):
     print(message_to_print)
     time.sleep(2)
