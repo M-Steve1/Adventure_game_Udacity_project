@@ -157,6 +157,6 @@ def play_again():
     else:
         print_pause("Would you like to play again? (y/n)")
 
-
+enemy_randomness()
 intro()
 field()
