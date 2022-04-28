@@ -70,7 +70,7 @@ def field():
 
 def lose_fight():
     print_pause("You do your best...")
-    print_pause(f"but your rusty {non_lethal_weapon.weak_weapon} is no match for "
+    print_pause(f"but your {non_lethal_weapon.weak_weapon} is no match for "
                 f"the {enemy_randomness.enemy}.")
     print_pause("You have been defeated!")
     play_again()
@@ -151,7 +151,7 @@ def play_again():
                                       "y", "n")
     if "y" == play_again_response:
         print_pause("Excellent! Restarting the game ...\n")
-        # call play_game funtion here 
+        play_game()
     elif "n" == play_again_response:
         print_pause("Thanks for playing! See you next time.")
     else:
@@ -164,3 +164,6 @@ def play_game():
     non_lethal_weapon()
     intro()
     field()
+
+
+play_game()
