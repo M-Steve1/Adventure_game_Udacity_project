@@ -138,7 +138,6 @@ def house():
                                  "(1) fight or (2) run away?", 1, 2)
     if str(1) == house_response:
         lose_fight()
-        print_pause("you lost")
     elif str(2) == house_response:
         print_pause("You run back into the field. Luckily, "
                     "you don't seem to have been followed.\n")
