@@ -59,6 +59,18 @@ def lose_fight():
     # play_again function goes here
 
 
+def win_fight():
+    print_pause(f"As the dragon moves to attack, "
+                f"you unsheath your new sword.")
+    print_pause(f"The sword shines brightly in your "
+                "hand as you brace yourself for the attack.")
+    print_pause(f"But the dragon takes one look at your "
+                "shiny new toy and runs away!")
+    print_pause(f"You have rid the town of the dragon. "
+                "You are victorious!")
+    # call play_again function here
+
+
 def cave():
     print_pause("You peer cautiously into the cave.")
     print_pause("It turns out to be only a very small cave.")
@@ -80,6 +92,7 @@ def cave():
                                    "(1) fight or (2) run away?", 1, 2)
             if str(1) == response:
                 print_pause("you win")
+                # call win_fight function here
                 x = 3
             elif str(2) == response:
                 print_pause("You run back into the field. Luckily, "
