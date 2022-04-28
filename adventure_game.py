@@ -51,6 +51,40 @@ def field():
         # cave scenerio
 
 
+def cave():
+    print_pause("You peer cautiously into the cave.")
+    print_pause("It turns out to be only a very small cave.")
+    print_pause(f"You have found the sword.")
+    print_pause(f"You discard your rusty dagger and take"
+                f"the sword with you.")
+    print_pause("You walk back out to the field.")
+
+    x = 0
+    while x < 2:
+        # intro2 function here
+
+        cave_response = valid_input("What would you like to do "
+                                    "(Please enter 1 or 2.)\n", 1, 2)
+
+        if str(1) == cave_response:
+            # call house_scenerio function
+            response = valid_input("Would you like to"
+                                   "(1) fight or (2) run away?", 1, 2)
+            if str(1) == response:
+                print_pause("you win")
+                x = 3
+            elif str(2) == response:
+                print_pause("You run back into the field. Luckily, "
+                            "you don't seem to have been followed.\n")
+
+        elif str(2) == cave_response:
+            print_pause("You peer cautiously into the cave.")
+            print_pause("You've been here before, "
+                        "and gotten all the good stuff.")
+            print_pause("It's just an empty cave now.")
+            print_pause("You walk back out to the field.")
+
+
 def house_scenerio():
     print_pause("You approach the door of the house.")
     print_pause(f"You are about to knock when the door "
