@@ -38,3 +38,14 @@ def valid_input(prompt, option1, option2):
         elif str(option2) == response:
             break
     return response
+
+
+def field():
+    response = valid_input("What would you like to do?\n"
+                           "(Please enter 1 or 2.)\n", 1, 2)
+    if str(1) == response:
+        print_pause("what happens in the house")
+        # house scenerio
+    elif str(2) == response:
+        print_pause("what happens in the cave")
+        # cave scenerio
