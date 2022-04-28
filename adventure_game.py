@@ -157,8 +157,10 @@ def play_again():
     else:
         print_pause("Would you like to play again? (y/n)")
 
-enemy_randomness()
-lethal_weapon()
-non_lethal_weapon()
-intro()
-field()
+
+def play_game():
+    enemy_randomness()
+    lethal_weapon()
+    non_lethal_weapon()
+    intro()
+    field()
