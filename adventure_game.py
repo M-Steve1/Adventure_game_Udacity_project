@@ -51,6 +51,14 @@ def field():
         cave()
 
 
+def lose_fight():
+    print_pause("You do your best...")
+    print_pause(f"but your rusty dagger is no match for "
+                f"the dragon.")
+    print_pause("You have been defeated!")
+    # play_again function goes here
+
+
 def cave():
     print_pause("You peer cautiously into the cave.")
     print_pause("It turns out to be only a very small cave.")
