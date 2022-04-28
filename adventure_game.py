@@ -13,6 +13,12 @@ def lethal_weapon():
     lethal_weapon.strong_weapon = random.choice(strong_weapon_list)
 
 
+def non_lethal_weapon():
+    weak_weapon_list = ["trusty (but not very effective) dagger",
+                        "spoon", "tiny-saw"]
+    non_lethal_weapon.weak_weapon = random.choice(weak_weapon_list)
+
+
 def print_pause(message_to_print):
     print(message_to_print)
     time.sleep(2)
