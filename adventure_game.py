@@ -86,6 +86,14 @@ def win_fight():
     play_again()
 
 
+def house_scenerio():
+    print_pause("You approach the door of the house.")
+    print_pause(f"You are about to knock when the door "
+                f"opens and out steps a {enemy_randomness.enemy} ")
+    print_pause(f"Eep! This is the {enemy_randomness.enemy} house!")
+    print_pause(f"The {enemy_randomness.enemy} attacks you!")
+
+
 def cave():
     print_pause("You peer cautiously into the cave.")
     print_pause("It turns out to be only a very small cave.")
@@ -118,14 +126,6 @@ def cave():
                         "and gotten all the good stuff.")
             print_pause("It's just an empty cave now.")
             print_pause("You walk back out to the field.")
-
-
-def house_scenerio():
-    print_pause("You approach the door of the house.")
-    print_pause(f"You are about to knock when the door "
-                f"opens and out steps a {enemy_randomness.enemy} ")
-    print_pause(f"Eep! This is the {enemy_randomness.enemy} house!")
-    print_pause(f"The {enemy_randomness.enemy} attacks you!")
 
 
 def house():
