@@ -60,6 +60,7 @@ def house_scenerio():
 
 
 def house():
+    house_scenerio()
     print_pause(f"You feel a bit under-prepared for this,"
                 f"what with only having a rusty dagger.")
     house_response = valid_input("Would you like to"
