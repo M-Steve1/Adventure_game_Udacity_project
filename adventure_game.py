@@ -33,7 +33,7 @@ def intro1():
     print_pause("In front of you is a house.")
     print_pause("To your right is a dark cave.")
     print_pause(f"In your hand you hold your "
-                f"rusty dagger.\n")
+                f"{non_lethal_weapon.weak_weapon}.\n")
 
 
 def intro2():
@@ -70,7 +70,7 @@ def field():
 
 def lose_fight():
     print_pause("You do your best...")
-    print_pause(f"but your rusty dagger is no match for "
+    print_pause(f"but your rusty {non_lethal_weapon.weak_weapon} is no match for "
                 f"the {enemy_randomness.enemy}.")
     print_pause("You have been defeated!")
     play_again()
@@ -92,7 +92,7 @@ def cave():
     print_pause("You peer cautiously into the cave.")
     print_pause("It turns out to be only a very small cave.")
     print_pause(f"You have found the {lethal_weapon.strong_weapon}.")
-    print_pause(f"You discard your rusty dagger and take"
+    print_pause(f"You discard your {non_lethal_weapon.weak_weapon} and take"
                 f"the {lethal_weapon.strong_weapon} with you.")
     print_pause("You walk back out to the field.")
 
@@ -133,7 +133,7 @@ def house_scenerio():
 def house():
     house_scenerio()
     print_pause(f"You feel a bit under-prepared for this,"
-                f"what with only having a rusty dagger.")
+                f"what with only having a {non_lethal_weapon.weak_weapon}.")
     house_response = valid_input("Would you like to"
                                  "(1) fight or (2) run away?", 1, 2)
     if str(1) == house_response:
