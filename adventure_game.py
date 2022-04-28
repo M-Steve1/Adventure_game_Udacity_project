@@ -48,7 +48,7 @@ def field():
         house()
     elif str(2) == response:
         print_pause("what happens in the cave")
-        # cave scenerio
+        cave()
 
 
 def cave():
