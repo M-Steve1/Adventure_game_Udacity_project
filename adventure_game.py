@@ -61,13 +61,13 @@ def cave():
 
     x = 0
     while x < 2:
-        # intro2 function here
+        intro2()
 
         cave_response = valid_input("What would you like to do "
                                     "(Please enter 1 or 2.)\n", 1, 2)
 
         if str(1) == cave_response:
-            # call house_scenerio function
+            house_scenerio()
             response = valid_input("Would you like to"
                                    "(1) fight or (2) run away?", 1, 2)
             if str(1) == response:
