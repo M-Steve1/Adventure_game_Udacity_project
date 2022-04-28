@@ -45,7 +45,7 @@ def field():
                            "(Please enter 1 or 2.)\n", 1, 2)
     if str(1) == response:
         print_pause("what happens in the house")
-        # house scenerio
+        house()
     elif str(2) == response:
         print_pause("what happens in the cave")
         # cave scenerio
