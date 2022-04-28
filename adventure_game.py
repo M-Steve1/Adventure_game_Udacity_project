@@ -7,6 +7,12 @@ def enemy_randomness():
     enemy_randomness.enemy = random.choice(villian_list)
 
 
+def lethal_weapon():
+    strong_weapon_list = ["magical Sword of Ogoroth", "magical Hammer",
+                          "magical Spell Book"]
+    lethal_weapon.strong_weapon = random.choice(strong_weapon_list)
+
+
 def print_pause(message_to_print):
     print(message_to_print)
     time.sleep(2)
