@@ -158,5 +158,6 @@ def play_again():
         print_pause("Would you like to play again? (y/n)")
 
 enemy_randomness()
+lethal_weapon()
 intro()
 field()
