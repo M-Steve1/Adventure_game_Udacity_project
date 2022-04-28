@@ -72,8 +72,8 @@ def lose_fight():
 
 def win_fight():
     print_pause(f"As the {enemy_randomness.enemy} moves to attack, "
-                f"you unsheath your new sword.")
-    print_pause(f"The sword shines brightly in your "
+                f"you unsheath your new {lethal_weapon.strong_weapon}.")
+    print_pause(f"The {lethal_weapon.strong_weapon} shines brightly in your "
                 "hand as you brace yourself for the attack.")
     print_pause(f"But the {enemy_randomness.enemy} takes one look at your "
                 "shiny new toy and runs away!")
@@ -85,9 +85,9 @@ def win_fight():
 def cave():
     print_pause("You peer cautiously into the cave.")
     print_pause("It turns out to be only a very small cave.")
-    print_pause(f"You have found the sword.")
+    print_pause(f"You have found the {lethal_weapon.strong_weapon}.")
     print_pause(f"You discard your rusty dagger and take"
-                f"the sword with you.")
+                f"the {lethal_weapon.strong_weapon} with you.")
     print_pause("You walk back out to the field.")
 
     x = 0
