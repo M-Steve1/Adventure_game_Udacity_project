@@ -50,5 +50,29 @@ def field():
         print_pause("what happens in the cave")
         # cave scenerio
 
+
+def house_scenerio():
+    print_pause("You approach the door of the house.")
+    print_pause(f"You are about to knock when the door "
+                f"opens and out steps a dragon")
+    print_pause(f"Eep! This is the dragon house!")
+    print_pause(f"The dragon attacks you!")
+
+
+def house():
+    print_pause(f"You feel a bit under-prepared for this,"
+                f"what with only having a rusty dagger.")
+    house_response = valid_input("Would you like to"
+                                 "(1) fight or (2) run away?", 1, 2)
+    if str(1) == house_response:
+        # lose_fight function here
+        print_pause("you lost")
+    elif str(2) == house_response:
+        print_pause("You run back into the field. Luckily, "
+                    "you don't seem to have been followed.\n")
+    else:
+        print_pause("(Please enter 1 or 2.)")
+
+
 intro()
 field()
