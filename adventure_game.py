@@ -56,7 +56,7 @@ def lose_fight():
     print_pause(f"but your rusty dagger is no match for "
                 f"the dragon.")
     print_pause("You have been defeated!")
-    # play_again function goes here
+    play_again()
 
 
 def win_fight():
@@ -68,7 +68,7 @@ def win_fight():
                 "shiny new toy and runs away!")
     print_pause(f"You have rid the town of the dragon. "
                 "You are victorious!")
-    # call play_again function here
+    play_again()
 
 
 def cave():
