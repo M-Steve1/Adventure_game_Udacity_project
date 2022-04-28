@@ -15,7 +15,7 @@ def print_pause(message_to_print):
 def intro1():
     print_pause("You find yourself standing in an open field,"
                 "filled with grass and yellow wildflowers.")
-    print_pause(f"Rumor has it that a dragon "
+    print_pause(f"Rumor has it that a {enemy_randomness.enemy} "
                 "is somewhere around here,"
                 "and has been terrifying the nearby village.")
     print_pause("In front of you is a house.")
@@ -59,19 +59,19 @@ def field():
 def lose_fight():
     print_pause("You do your best...")
     print_pause(f"but your rusty dagger is no match for "
-                f"the dragon.")
+                f"the {enemy_randomness.enemy}.")
     print_pause("You have been defeated!")
     play_again()
 
 
 def win_fight():
-    print_pause(f"As the dragon moves to attack, "
+    print_pause(f"As the {enemy_randomness.enemy} moves to attack, "
                 f"you unsheath your new sword.")
     print_pause(f"The sword shines brightly in your "
                 "hand as you brace yourself for the attack.")
-    print_pause(f"But the dragon takes one look at your "
+    print_pause(f"But the {enemy_randomness.enemy} takes one look at your "
                 "shiny new toy and runs away!")
-    print_pause(f"You have rid the town of the dragon. "
+    print_pause(f"You have rid the town of the {enemy_randomness.enemy}. "
                 "You are victorious!")
     play_again()
 
@@ -113,9 +113,9 @@ def cave():
 def house_scenerio():
     print_pause("You approach the door of the house.")
     print_pause(f"You are about to knock when the door "
-                f"opens and out steps a dragon")
-    print_pause(f"Eep! This is the dragon house!")
-    print_pause(f"The dragon attacks you!")
+                f"opens and out steps a {enemy_randomness.enemy} ")
+    print_pause(f"Eep! This is the {enemy_randomness.enemy} house!")
+    print_pause(f"The {enemy_randomness.enemy} attacks you!")
 
 
 def house():
