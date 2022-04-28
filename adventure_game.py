@@ -139,6 +139,8 @@ def house():
     elif str(2) == house_response:
         print_pause("You run back into the field. Luckily, "
                     "you don't seem to have been followed.\n")
+        intro2()
+        field()
     else:
         print_pause("(Please enter 1 or 2.)")
 
