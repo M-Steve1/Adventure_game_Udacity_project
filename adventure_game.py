@@ -27,3 +27,14 @@ def intro2():
 def intro():
     intro1()
     intro2()
+
+
+# validates user input.
+def valid_input(prompt, option1, option2):
+    while True:
+        response = (input(prompt))
+        if str(option1) == response:
+            break
+        elif str(option2) == response:
+            break
+    return response
