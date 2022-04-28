@@ -51,3 +51,4 @@ def field():
         # cave scenerio
 
 intro()
+field()
