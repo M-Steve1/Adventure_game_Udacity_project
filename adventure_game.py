@@ -24,6 +24,17 @@ def print_pause(message_to_print):
     time.sleep(2)
 
 
+# validates user input.
+def valid_input(prompt, option1, option2):
+    while True:
+        response = (input(prompt))
+        if str(option1) == response:
+            break
+        elif str(option2) == response:
+            break
+    return response
+
+
 def intro1():
     print_pause("You find yourself standing in an open field,"
                 "filled with grass and yellow wildflowers.")
@@ -44,17 +55,6 @@ def intro2():
 def intro():
     intro1()
     intro2()
-
-
-# validates user input.
-def valid_input(prompt, option1, option2):
-    while True:
-        response = (input(prompt))
-        if str(option1) == response:
-            break
-        elif str(option2) == response:
-            break
-    return response
 
 
 def field():
