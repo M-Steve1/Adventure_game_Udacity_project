@@ -91,8 +91,7 @@ def cave():
             response = valid_input("Would you like to"
                                    "(1) fight or (2) run away?", 1, 2)
             if str(1) == response:
-                print_pause("you win")
-                # call win_fight function here
+                win_fight()
                 x = 3
             elif str(2) == response:
                 print_pause("You run back into the field. Luckily, "
